@@ -89,28 +89,28 @@ describe('Planit Assessment Test',async()=> {
         let subtotalStuffedFrog = await SamplePage.subtotalStuffedFrog;
         await browser.pause(500);
         await subtotalStuffedFrog.waitForDisplayed();
-        await expect(await subtotalStuffedFrog.getText()).toContain("21.98");
+        await expect(await subtotalStuffedFrog.getText()).toContain("$21.98");
         let subtotalFluffyBunny = await SamplePage.subtotalFluffyBunny;
         await browser.pause(500);
         await subtotalFluffyBunny.waitForDisplayed();
-        await expect(await subtotalFluffyBunny.getText()).toContain("49.95");
+        await expect(await subtotalFluffyBunny.getText()).toContain("$49.95");
         let subtotalValentineBear = await SamplePage.subtotalValentineBear;
         await browser.pause(500);
         await subtotalValentineBear.waitForDisplayed();
-        await expect(await subtotalValentineBear.getText()).toContain("44.97");
+        await expect(await subtotalValentineBear.getText()).toContain("$44.97");
         //Verify the price for each product
         let priceStuffedFrog = await SamplePage.priceStuffedFrog;
         await browser.pause(500);
         await priceStuffedFrog.waitForDisplayed();
-        await expect(await priceStuffedFrog.getText()).toContain("10.99");
+        await expect(await priceStuffedFrog.getText()).toContain("$10.99");
         let priceFluffyBunny = await SamplePage.priceFluffyBunny;
         await browser.pause(500);
         await priceFluffyBunny.waitForDisplayed();
-        await expect(await priceFluffyBunny.getText()).toContain("9.99");
+        await expect(await priceFluffyBunny.getText()).toContain("$9.99");
         let priceValentineBear = await SamplePage.priceValentineBear;
         await browser.pause(500);
         await priceValentineBear.waitForDisplayed();
-        await expect(await priceValentineBear.getText()).toContain("14.99");
+        await expect(await priceValentineBear.getText()).toContain("$14.99");
         //Verify that total = sum(sub totals)
         const subTotalTxtStuffedFrog = await subtotalStuffedFrog.getText();
         const subTotalTxtFluffyBunny = await subtotalFluffyBunny.getText();
