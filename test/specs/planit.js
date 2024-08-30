@@ -1,9 +1,8 @@
 const { expect } = require('@wdio/globals')
-// const SamplePage = require('../pageobjects/sample.page')
 const { SELECT_ITEM, SamplePage } = require('../pageobjects/sample.page')
 
 
-describe('Planit Assessment Test',async()=> {
+describe('Sample Automation Tests',async()=> {
     it('Test Case 1', async () => {
         await SamplePage.openAppUrl();
         //From the home page go to contact page
